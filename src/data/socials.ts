@@ -30,6 +30,8 @@ export const socials: SocialLink[] = [
   },
 ];
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export const profile = {
   name: "Emmanuel Toba",
   handle: "Manuel-Lab-Code",
@@ -43,5 +45,5 @@ export const profile = {
   email: "emmanueltobalase@gmail.com",
   githubUrl: "https://github.com/Manuel-Lab-Code",
   bio: "Full-stack developer focused on React and Node.js, based in Lagos, Nigeria. I build fast, accessible, production-ready web applications — from multi-tenant platforms to conversion-focused client sites.",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: `${baseUrl}resume.pdf`,
 };

@@ -9,7 +9,7 @@ const orbitIcons = [
 ];
 
 export function AnimatedAvatar() {
-  const avatarSrc = `${import.meta.env.BASE_URL}Assets/Profile.png`; // Replace this path with your own photo file in public/
+  const avatarSrc = `${import.meta.env.BASE_URL}Profile.png`; // Replace this path with your own photo file in public/
 
   return (
     <div className="relative mx-auto flex aspect-square w-[min(22rem,80vw)] items-center justify-center sm:w-[min(26rem,80vw)]">

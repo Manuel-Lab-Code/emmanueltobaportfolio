@@ -45,6 +45,6 @@ export const profile = {
   email: "emmanueltobalase@gmail.com",
   githubUrl: "https://github.com/Manuel-Lab-Code",
   bio: "Full-stack developer focused on React and Node.js, based in Lagos, Nigeria. I build fast, accessible, production-ready web applications — from multi-tenant platforms to conversion-focused client sites.",
-  resumeUrl: `${baseUrl}resume.pdf`,
+  resumeUrl: `${baseUrl}Emmanuel_Tobalase_Resume.pdf`,
   profileImage: `${baseUrl}Profile2.png`,
 };

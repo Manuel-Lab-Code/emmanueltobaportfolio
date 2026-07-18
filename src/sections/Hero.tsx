@@ -102,7 +102,7 @@ export function Hero() {
             <Magnetic>
               <a
                 href={profile.resumeUrl}
-                target="_blank"
+                target="public/Emmanuel_Tobalase_Resume.pdf"
                 rel="noreferrer"
                 onMouseEnter={() => setCursor("link")}
                 onMouseLeave={resetCursor}

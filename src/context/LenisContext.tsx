@@ -18,9 +18,19 @@ export function useSmoothScrollTo() {
   return (target: string | number, offset = 0) => {
     const lenis = lenisRef?.current;
     if (lenis) {
-      lenis.scrollTo(target, { offset, duration: 1.2 });
-    } else if (typeof target === "string") {
-      document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
+      lenis.scrollTo(target, { offset, duration: 0 });
+      return;
     }
+
+    if (typeof target === "string") {
+      const element = document.querySelector<HTMLElement>(target);
+      if (!element) return;
+
+      const top = element.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top, behavior: "auto" });
+      return;
+    }
+
+    window.scrollTo({ top: target + offset, behavior: "auto" });
   };
 }
